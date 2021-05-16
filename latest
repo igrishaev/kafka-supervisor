@@ -5,8 +5,7 @@ FROM ubuntu:focal
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-LABEL org.label-schema.vendor="exoscale"
-LABEL org.label-schema.vcs-url="https://github.com/exoscale/dockerfiles"
+LABEL org.label-schema.vcs-url="https://github.com/igrishaev/kafka-supervisor"
 LABEL org.label-schema.schema-version="1.0"
 
 # Tools

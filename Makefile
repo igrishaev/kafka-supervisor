@@ -1,5 +1,5 @@
 
-IMAGE = registry.internal.exoscale.ch/exoscale/kafka-supervisor:latest
+IMAGE = kafka-supervisor:latest
 
 docker-build:
 	docker build --no-cache -t ${IMAGE} -f latest .
