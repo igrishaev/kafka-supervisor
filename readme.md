@@ -1,8 +1,6 @@
 
 # Kafka-Supervisor
 
-[CI Pipeline](https://ci.internal.exoscale.ch/blue/organizations/jenkins/docker-kafka-supervisor/activity/)
-
 [spotify-kafka]: https://github.com/spotify/docker-kafka
 
 This image brings the standard, non-Confluent Kafka installation. The main
