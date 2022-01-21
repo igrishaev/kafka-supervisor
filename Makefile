@@ -1,5 +1,5 @@
 
-IMAGE = kafka-supervisor:latest
+IMAGE = igrishaev/kafka:latest
 
 docker-build:
 	docker build --no-cache -t ${IMAGE} -f latest .
