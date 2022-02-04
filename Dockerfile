@@ -13,12 +13,13 @@ RUN apt-get update -q
 RUN apt-get install -y -q wget curl rlwrap
 
 # Install Kafka
-ARG KAFKA_VERSION=2.7.0
+ARG KAFKA_VERSION=2.7.2
 ARG SCALA_VERSION=2.13
 
 ARG KAFKA_DIR=kafka_${SCALA_VERSION}-${KAFKA_VERSION}
 ARG KAFKA_TMP=/tmp/${KAFKA_DIR}.tgz
-ARG KAFKA_URL=http://apache.mirrors.spacedump.net/kafka/${KAFKA_VERSION}/${KAFKA_DIR}.tgz
+
+ARG KAFKA_URL=https://dlcdn.apache.org/kafka/${KAFKA_VERSION}/kafka_${SCALA_VERSION}-${KAFKA_VERSION}.tgz
 
 RUN wget -q ${KAFKA_URL} -O ${KAFKA_TMP}
 RUN tar xfz ${KAFKA_TMP} -C /
